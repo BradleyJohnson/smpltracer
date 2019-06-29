@@ -17,3 +17,8 @@ func TestNew(t *testing.T) {
 		}
 	}
 }
+
+func TestOff(t *testing.T) {
+	var silentTracer Smpltracer = Off()
+	silentTracer.Trace("anything")
+}
